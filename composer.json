@@ -1,0 +1,15 @@
+{
+  "name": "uPaid/redispckg",
+  "description": "Redis helper for set key prefixes",
+  "license": "MIT",
+  "homepage": "https://github.com/uPaid/redispckg",
+  "autoload": {
+    "psr-4": {
+      "Redispckg\\": "src"
+    }
+  },
+  "require": {
+    "php": ">= 5.3",
+	"predis/predis": "^1.1"
+   }
+}
