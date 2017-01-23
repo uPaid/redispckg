@@ -1,6 +1,6 @@
 <?php
 
-namespace Upaid\Redispckg\Providers;
+namespace Redispckg\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
