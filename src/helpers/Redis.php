@@ -30,7 +30,7 @@ class Redis extends RedisOld {
      * @param int $expTime
      * @return bool
      */
-    public static function setKeyValueWithExpTime($keyData, $value, $expTime = 10000){
+    public static function setKeyValueWithExpTime($keyData, $value, $expTime = 900){
         self::set($keyData, $value);
         return self::expire($keyData, $expTime);
     }
