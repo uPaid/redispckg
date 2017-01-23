@@ -1,7 +1,7 @@
 <?php
 
 use M6Web\Component\RedisMock\RedisMockFactory;
-use Upaid\Redispckg\Helpers\Redis;
+use Redispckg\Helpers\Redis;
 
 class RedisTest extends TestCase {
     
