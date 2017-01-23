@@ -1,6 +1,6 @@
 <?php
 
-namespace Upaid\Redispckg\Helpers;
+namespace Redispckg\Helpers;
 
 use Illuminate\Support\Facades\Redis as RedisOld; 
 
