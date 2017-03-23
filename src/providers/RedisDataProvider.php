@@ -2,6 +2,7 @@
 
 namespace Redispckg\Providers;
 
+use Illuminate\Redis\RedisManager;
 use Illuminate\Support\ServiceProvider;
 
 class RedisDataProvider extends ServiceProvider {
@@ -22,7 +23,7 @@ class RedisDataProvider extends ServiceProvider {
     {
         $this->mergeConfigFrom( __DIR__.'/../config/database.php', 'redispckg');
         $this->app->singleton('redis', function ($app) {
-            return new \Illuminate\Redis\Database($app['config']['database.redis']);
+            return new RedisManager('predis', $app['config']['database.redis']);
         });
     }
     
