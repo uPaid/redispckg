@@ -1,5 +1,5 @@
 {
-  "name": "upaid/redispckg",
+  "name": "uPaid/redispckg",
   "description": "Redis helper for set key prefixes",
   "license": "MIT",
   "homepage": "https://github.com/uPaid/redispckg",
