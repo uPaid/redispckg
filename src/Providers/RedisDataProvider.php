@@ -21,7 +21,7 @@ class RedisDataProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->mergeConfigFrom( __DIR__.'/../config/database.php', 'redispckg');
+        $this->mergeConfigFrom( __DIR__ . '/../Config/database.php', 'redispckg');
         $this->app->singleton('redis', function ($app) {
             return new RedisManager('predis', $app['config']['database.redis']);
         });
@@ -33,7 +33,7 @@ class RedisDataProvider extends ServiceProvider {
      * @return void
      */
     public function boot(){
-        require_once(__DIR__.'/../config/database.php');
+        require_once(__DIR__ . '/../Config/database.php');
     }
 
     /**
