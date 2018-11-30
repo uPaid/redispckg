@@ -23,7 +23,7 @@ class RedisDataProvider extends ServiceProvider {
     {
         $this->mergeConfigFrom( __DIR__ . '/../Config/database.php', 'redispckg');
         $this->app->singleton('redis', function ($app) {
-            return new RedisManager('predis', $app['config']['database.redis']);
+            return new RedisManager($app, 'predis', $app['config']['database.redis']);
         });
     }
     
